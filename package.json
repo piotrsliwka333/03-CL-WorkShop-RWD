@@ -1,0 +1,32 @@
+{
+  "name": "bestshoprwd",
+  "version": "1.0.0",
+  "description": "<img alt=\"Logo\" src=\"http://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotrsliwka333/WRO_FER_S_21_RWD_SASS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotrsliwka333/WRO_FER_S_21_RWD_SASS/issues"
+  },
+  "homepage": "https://github.com/piotrsliwka333/WRO_FER_S_21_RWD_SASS#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
