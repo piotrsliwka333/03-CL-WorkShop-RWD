@@ -1,0 +1,120 @@
+.main {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+
+  .jumbotron {
+    background-color: #FFFFFF;
+
+    .container {
+
+      .jumbotron-box {
+        height: 213px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .visible {
+          visibility: hidden;
+        }
+
+        &__title {
+          font: Regular 35px/41px Raleway;
+          font-size: 41px;
+          color: nth($colors,4);
+
+        }
+
+        &__text {
+          text-align: center;
+          font: Regular 16px/22px Open Sans;
+          padding: 0 20px;
+        }
+
+      }
+
+      .jumbotron-background {
+        width: 100%;
+        background-image: url("../../assets/Background.png");
+        background-position: bottom;
+        padding-bottom: 56.25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include desktop {
+          background-size: contain;
+          padding-bottom: 30%;
+        }
+      }
+
+    }
+  }
+  //statistics section
+
+  .statistics {
+    width: 100%;
+    background-color: nth($colors, 8);
+    .statistics__title {
+      padding: 30px 36px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      font-family: 'Raleway', sans-serif;
+      color: nth($colors, 4);
+    }
+
+    .row {
+
+      .stats-box {
+        width: 120px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px auto;
+
+        &__circle {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: nth($colors, 2);
+          position: relative;
+
+          .icon {
+            position: absolute;
+            left: 30px;
+            top: 5px;
+          }
+          .eye {
+            top: 15px;
+            left: 20px;
+          }
+        }
+
+        .blue {
+          background-color: nth($colors, 1);
+        }
+
+        .green {
+          background-color: nth($colors, 3);
+        }
+
+        &__numbers {
+          font-size: 20px;
+          font-weight: bold;
+          font-family: 'Raleway', sans-serif;
+          letter-spacing: 6px;
+          color: nth($colors, 4);
+        }
+        &__text {
+          font: Regular 17px/20px Raleway;
+          text-align: center;
+          color: nth($colors, 7);
+
+        }
+      }
+    }
+  }
+
+}
