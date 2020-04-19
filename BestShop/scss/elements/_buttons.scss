@@ -9,3 +9,26 @@
   text-decoration: none;
   border-radius: 40px;
 }
+
+.btn-pricing {
+  font-size: 13px;
+  font-family: "Bold","Open Sans", sans-serif;
+  background-color: red;
+  color: nth($colors, 8);
+  padding: 20px 45px;
+  border-radius: 23px;
+  text-decoration: none;
+  position: absolute;
+  top: calc(100% - 30px);
+  left: calc(50% - 65px);
+}
+
+.btn-professional {
+  background-color: nth($colors, 1);
+  box-shadow: 5px 10px 14px #07ACE629;
+}
+
+.btn-premium {
+  background-color: nth($colors, 3);
+}
+
