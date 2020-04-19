@@ -27,6 +27,7 @@
     .menu-toggle {
       display: block;
       margin-right: 32px;
+      color: nth($colors, 1);
       @include desktop {
         display: none;
       }
