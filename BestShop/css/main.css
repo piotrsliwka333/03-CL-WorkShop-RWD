@@ -1350,7 +1350,7 @@ body {
   margin-right: 30px;
 }
 
-.calculator-main .container .inputs-group .products-quantity, .calculator-main .container .inputs-group .estimated-orders-month {
+.calculator-main .container .inputs-group .products-quantity-input, .calculator-main .container .inputs-group .estimated-orders-month-input {
   padding: 11px 20px;
   font-family: "Regular", "Open Sans", sans-serif;
   color: black;
