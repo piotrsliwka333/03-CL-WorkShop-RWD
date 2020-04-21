@@ -12,8 +12,20 @@ document.addEventListener('DOMContentLoaded',function () {
 	const ordersConverter = document.querySelector('.orders-converter');
 	const ordersSum = document.querySelector('.orders-sum');
 
+	const bundleOption = document.querySelector('.bundle-option');
+	const bundleName = document.querySelector('.bundle-name');
+	const bundleSum = document.querySelector('.bundle-sum');
+
+	const accountingCheckbox = document.getElementById('accounting');
+	const accountingSum = document.querySelector('.accounting-sum');
+
+	const rentalCheckbox = document.getElementById('rental');
+	const terminalSum = document.querySelector('.terminal-sum');
+
 	const total = document.querySelector('.total');
 	const lem = document.querySelector('.total-value');
+
+
 
 
 
@@ -23,6 +35,9 @@ document.addEventListener('DOMContentLoaded',function () {
 
 	let a = 0;
 	let b = 0;
+	let c = 0;
+	let d = 0;
+	let e = 0;
 
 
 
@@ -46,7 +61,7 @@ document.addEventListener('DOMContentLoaded',function () {
 			productsSum.innerText = productResult;
 			a = productResult;
 		}
-		total.innerText = a+b;
+		total.innerText = a+b+c+d+e;
 		console.log("Number a result:   " + a);
 	});
 
@@ -73,10 +88,67 @@ document.addEventListener('DOMContentLoaded',function () {
 			b = orderResult;
 
 		}
-		total.innerText = a+b;
+		total.innerText = a+b+c+d+e;
 		console.log("Number b result:   " + b);
 	});
 
+	// let ifChecked = function(checkbox, placeToInnerText,value,variable) {
+	// 	if (checkbox.checked === true) {
+	// 		placeToInnerText.innerText = `${value}$`
+	// 		variable = value;
+	// 	} else {
+	// 		placeToInnerText.innerText = "";
+	// 		variable = 0;
+	// 	}
+	// }
 
+	accountingCheckbox.addEventListener('click',function (event) {
+		if (accountingCheckbox.checked === true) {
+			accountingSum.innerText = "35$";
+			c = 35;
+		} else {
+			accountingSum.innerText = "";
+			c = 0;
+		}
+		total.innerText = a+b+c+d+e;
+
+	});
+
+	rentalCheckbox.addEventListener('click',function (event) {
+		if (rentalCheckbox.checked === true) {
+			terminalSum.innerText = "5$";
+			d = 5;
+		} else {
+			terminalSum.innerText = "";
+			d = 0;
+		}
+		total.innerText = a+b+c+d+e;
+
+	})
+
+	// selected
+	bundleOption.addEventListener('click',function (event) {
+		if (bundleOption.value === "basic") {
+			bundleName.innerText = `${bundleOption.value}`;
+			bundleSum.innerText = "0$";
+			e = 0;
+
+		} else if (bundleOption.value === "professional") {
+			bundleName.innerText = `${bundleOption.value}`;
+			bundleSum.innerText = "25$";
+			e = 25;
+		} else if (bundleOption.value === "premium") {
+			bundleName.innerText = `${bundleOption.value}`;
+			bundleSum.innerText = "60$";
+			e = 60;
+		}
+		total.innerText = a+b+c+d+e;
+
+	})
 
 });
+
+
+
+
+
