@@ -7,12 +7,13 @@
 .main {
   width: 100%;
   margin-top: 100px;
-  position: relative;
 
   .jumbotron {
     background-color: #FFFFFF;
 
+
     .container {
+      position: relative;
 
       .jumbotron-box {
         height: 213px;
@@ -21,14 +22,17 @@
         justify-content: space-between;
         align-items: center;
 
+
         .visible {
           visibility: hidden;
         }
 
         &__title {
+          position: relative;
           font: Regular 35px/41px Raleway;
           font-size: 41px;
           color: nth($colors, 4);
+
 
         }
 

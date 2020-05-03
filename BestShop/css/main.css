@@ -667,11 +667,14 @@ body {
 .main {
   width: 100%;
   margin-top: 100px;
-  position: relative;
 }
 
 .main .jumbotron {
   background-color: #FFFFFF;
+}
+
+.main .jumbotron .container {
+  position: relative;
 }
 
 .main .jumbotron .container .jumbotron-box {
@@ -687,6 +690,7 @@ body {
 }
 
 .main .jumbotron .container .jumbotron-box__title {
+  position: relative;
   font: Regular 35px/41px Raleway;
   font-size: 41px;
   color: #000000;
