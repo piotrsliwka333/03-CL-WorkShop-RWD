@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -1331,6 +1332,14 @@ body {
   margin-left: 20px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.calculator-main {
+  margin-top: 20px;
+}
+
 .calculator-main .calculator-title {
   text-align: center;
   font-size: 36px;
@@ -1338,6 +1347,13 @@ body {
   letter-spacing: 0;
   color: #000000;
   margin-bottom: 40px;
+}
+
+.calculator-main article > p:last-child {
+  color: white;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
 }
 
 .calculator-main .container {
@@ -1365,6 +1381,36 @@ body {
   margin-bottom: 20px;
 }
 
+.calculator-main .container .inputs-group .products-quantity-input::-webkit-input-placeholder, .calculator-main .container .inputs-group .estimated-orders-month-input::-webkit-input-placeholder {
+  font-family: Regular, "Open Sans", sans-serif;
+  color: #A5A5A5;
+  font-size: 18px;
+}
+
+.calculator-main .container .inputs-group .products-quantity-input::-moz-placeholder, .calculator-main .container .inputs-group .estimated-orders-month-input::-moz-placeholder {
+  font-family: Regular, "Open Sans", sans-serif;
+  color: #A5A5A5;
+  font-size: 18px;
+}
+
+.calculator-main .container .inputs-group .products-quantity-input:-ms-input-placeholder, .calculator-main .container .inputs-group .estimated-orders-month-input:-ms-input-placeholder {
+  font-family: Regular, "Open Sans", sans-serif;
+  color: #A5A5A5;
+  font-size: 18px;
+}
+
+.calculator-main .container .inputs-group .products-quantity-input::-ms-input-placeholder, .calculator-main .container .inputs-group .estimated-orders-month-input::-ms-input-placeholder {
+  font-family: Regular, "Open Sans", sans-serif;
+  color: #A5A5A5;
+  font-size: 18px;
+}
+
+.calculator-main .container .inputs-group .products-quantity-input::placeholder, .calculator-main .container .inputs-group .estimated-orders-month-input::placeholder {
+  font-family: Regular, "Open Sans", sans-serif;
+  color: #A5A5A5;
+  font-size: 18px;
+}
+
 .calculator-main .container .inputs-group .bundle-option {
   padding: 11px 20px;
   font-family: "Regular", "Open Sans", sans-serif;
@@ -1374,6 +1420,45 @@ body {
   border-radius: 6px;
   opacity: 1;
   margin-bottom: 20px;
+}
+
+.calculator-main .container .inputs-group .inputs-container {
+  margin: 10px 0;
+}
+
+.calculator-main .container .inputs-group .inputs-container label {
+  color: #707070;
+  font-size: 17px;
+}
+
+.calculator-main .container .inputs-group .inputs-container .checkbox-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 3px;
+  background: white;
+  border: 1px solid lightgray;
+  outline: none;
+  position: relative;
+}
+
+.calculator-main .container .inputs-group .inputs-container .checkbox-input:checked:after {
+  color: #08A6E4;
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  display: block;
+  content: "✔";
+  left: 50%;
+  top: 9px;
+  transform: translate(-50%, -50%);
 }
 
 .calculator-main .container .inputs-group .products-sum {
@@ -1397,7 +1482,7 @@ body {
   border-radius: 6px;
   opacity: 1;
   width: 100%;
-  padding: 6px 20px;
+  padding: 10px 20px;
   margin-bottom: 8px;
 }
 

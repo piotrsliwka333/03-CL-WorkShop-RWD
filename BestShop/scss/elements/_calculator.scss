@@ -1,4 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 .calculator-main {
+  margin-top: 20px;
   .calculator-title {
     text-align: center;
     font-size: 36px;
@@ -7,6 +12,15 @@
     color: #000000;
     margin-bottom: 40px;
   }
+
+  article > p:last-child {
+    color: white;
+    font-weight: bold;
+    font-family:"Open Sans", sans-serif;
+    font-size: 20px;
+
+  }
+
 
   .container {
     width: 1350px;
@@ -34,6 +48,12 @@
 
       }
 
+      .products-quantity-input::placeholder,.estimated-orders-month-input::placeholder {
+        font-family: Regular, "Open Sans", sans-serif;
+        color: nth($colors,7);
+        font-size: 18px;
+      }
+
       .bundle-option {
         padding: 11px 20px;
         font-family: "Regular", "Open Sans", sans-serif;
@@ -45,7 +65,48 @@
         margin-bottom: 20px;
       }
 
+      //.bundle-name {
+      //  color: #FFFFFF ;
+      //  font-size: 20px;
+      //  font-weight: bold;
+      //}
+
+
       .inputs-container {
+        margin: 10px 0;
+
+        label {
+          color: nth($colors,5);
+          font-size: 17px;
+        }
+        .checkbox-input {
+          appearance: none;
+          margin-right: 5px;
+          width: 25px;
+          height: 25px;
+          display: inline-block;
+          vertical-align: middle;
+          border-radius: 3px;
+          background: white;
+          border: 1px solid lightgray;
+          outline: none;
+          position: relative;
+        }
+
+        .checkbox-input:checked:after {
+          color: #08A6E4;
+          position: absolute;
+          font-size: 20px;
+          text-align: center;
+          height: 20px;
+          width: 20px;
+          display: block;
+          content: "✔";
+          left: 50%;
+          top: 9px;
+          transform: translate(-50%,-50%);
+        }
+
 
       }
 
@@ -71,7 +132,7 @@
         border-radius: 6px;
         opacity: 1;
         width: 100%;
-        padding: 6px 20px;
+        padding: 10px 20px;
         margin-bottom: 8px;
 
         .option-name {
@@ -103,9 +164,7 @@
         .total {
           font-size: 20px;
         }
-
       }
     }
-
   }
 }

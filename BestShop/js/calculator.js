@@ -25,11 +25,6 @@ document.addEventListener('DOMContentLoaded',function () {
 	const total = document.querySelector('.total');
 	const lem = document.querySelector('.total-value');
 
-
-
-
-
-
 	let sum = 0;
 	let numberArray =[];
 
@@ -38,9 +33,6 @@ document.addEventListener('DOMContentLoaded',function () {
 	let c = 0;
 	let d = 0;
 	let e = 0;
-
-
-
 
 	productQuantityInput.addEventListener('keyup', function (event) {
 		productPlaceToInner.innerText = productQuantityInput.value;
@@ -58,10 +50,10 @@ document.addEventListener('DOMContentLoaded',function () {
 		}else {
 			productConverter.innerText = "0.25$";
 			productTimes.innerText = "*";
-			productsSum.innerText = productResult;
+			productsSum.innerText = `${productResult}$`;
 			a = productResult;
 		}
-		total.innerText = a+b+c+d+e;
+		total.innerText = `$${a+b+c+d+e}`;
 		console.log("Number a result:   " + a);
 	});
 
@@ -79,16 +71,17 @@ document.addEventListener('DOMContentLoaded',function () {
 			ordersConverter.innerText = "";
 			ordersTimes.innerText = "";
 			ordersSum.innerText = "";
+
 			b = 0;
 
 		}else {
 			ordersConverter.innerText = "0.50$";
 			ordersTimes.innerText = "*";
-			ordersSum.innerText = orderResult;
+			ordersSum.innerText = `$${orderResult}`;
 			b = orderResult;
 
 		}
-		total.innerText = a+b+c+d+e;
+		total.innerText = `$${a+b+c+d+e}`;
 		console.log("Number b result:   " + b);
 	});
 
@@ -110,7 +103,7 @@ document.addEventListener('DOMContentLoaded',function () {
 			accountingSum.innerText = "";
 			c = 0;
 		}
-		total.innerText = a+b+c+d+e;
+		total.innerText = `$${a+b+c+d+e}`;
 
 	});
 
@@ -122,7 +115,7 @@ document.addEventListener('DOMContentLoaded',function () {
 			terminalSum.innerText = "";
 			d = 0;
 		}
-		total.innerText = a+b+c+d+e;
+		total.innerText = `$${a+b+c+d+e}`;
 
 	})
 
@@ -142,7 +135,7 @@ document.addEventListener('DOMContentLoaded',function () {
 			bundleSum.innerText = "60$";
 			e = 60;
 		}
-		total.innerText = a+b+c+d+e;
+		total.innerText = `$${a+b+c+d+e}`;
 
 	})
 
