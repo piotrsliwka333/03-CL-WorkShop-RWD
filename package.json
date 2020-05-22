@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://piotrsliwka333.github.io/03-CL-WorkShop-RWD"
+    "url": "git+https://github.com/piotrsliwka333/WRO_FER_S_21_RWD_SASS.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://piotrsliwka333.github.io/03-CL-WorkShop-RWD"
+    "url": "https://github.com/piotrsliwka333/WRO_FER_S_21_RWD_SASS/issues"
   },
-  "homepage": "https://piotrsliwka333.github.io/03-CL-WorkShop-RWD",
+  "homepage": "https://github.com/piotrsliwka333/WRO_FER_S_21_RWD_SASS#readme",
   "dependencies": {
     "browser-sync": "^2.26.7",
     "gh-pages": "^2.2.0",
