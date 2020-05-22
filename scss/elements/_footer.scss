@@ -1,0 +1,45 @@
+.page-footer {
+  box-shadow: 0px -5px 40px #00000029;
+  margin-top: 30px;
+  background: #F7F7F7;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .footer-info {
+
+      &__logo {
+        display: block;
+        font-size: 32px;
+        font: Light 32px/37px Raleway;
+        color: nth($colors, 1);
+        font-weight: lighter;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+
+      &__copy-right {
+        font-family: "Regular","Open Sans", sans-serif;
+        color: nth($colors, 7);
+
+      }
+    }
+
+    .footer-media {
+
+      &__icon {
+        text-decoration: none;
+        font-size: 30px;
+        color: nth($colors, 1);
+      }
+
+      .fb {
+        color: royalblue;
+        margin-left: 20px;
+      }
+    }
+  }
+}

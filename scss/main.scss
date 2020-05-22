@@ -1,0 +1,16 @@
+// settings
+@import "settings/mixins";
+
+// generic
+@import "generic/reset";
+@import "generic/grid";
+
+// elements
+@import "elements/base";
+@import "elements/buttons";
+@import "elements/header";
+@import "elements/main";
+@import "elements/footer";
+
+//calculator  site
+@import "elements/calculator";
