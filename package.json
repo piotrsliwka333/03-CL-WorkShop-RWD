@@ -4,20 +4,22 @@
   "description": "<img alt=\"Logo\" src=\"http://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d BestShop"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/piotrsliwka333/WRO_FER_S_21_RWD_SASS.git"
+    "url": "https://piotrsliwka333.github.io/03-CL-WorkShop-RWD"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/piotrsliwka333/WRO_FER_S_21_RWD_SASS/issues"
+    "url": "https://piotrsliwka333.github.io/03-CL-WorkShop-RWD"
   },
-  "homepage": "https://github.com/piotrsliwka333/WRO_FER_S_21_RWD_SASS#readme",
+  "homepage": "https://piotrsliwka333.github.io/03-CL-WorkShop-RWD",
   "dependencies": {
     "browser-sync": "^2.26.7",
+    "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
   },
