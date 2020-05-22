@@ -705,7 +705,7 @@ body {
 
 .main .jumbotron .container .jumbotron-background {
   width: 100%;
-  background-image: url("../../assets/Background.png");
+  background-image: url("../assets/Background.png");
   background-position: bottom;
   padding-bottom: 56.25%;
   background-repeat: no-repeat;
