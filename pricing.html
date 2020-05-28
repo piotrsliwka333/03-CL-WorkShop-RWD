@@ -15,65 +15,66 @@
     <main class="calculator-main">
         <h1 class="calculator-title">Calculate how much you’ll pay</h1>
         <div class="container">
-            <div class="col-4 col-lg-4 inputs-group" >
-                <input type="number" class="products-quantity-input" placeholder="Products quantity">
-                <input type="number" class="estimated-orders-month-input" placeholder="Estimated orders in month">
-                <select class="bundle-option">
-                    <option value="basic" >Basic</option>
-                    <option value="professional">Professional</option>
-                    <option value="premium">Premium</option>
-                </select>
-                <div class="inputs-container">
-                    <input type="checkbox" id="accounting" class="checkbox-input">
-                    <label for="accounting">Accounting</label>
-                <div class="inputs-container">
-                    <input type="checkbox" id="rental" class="checkbox-input">
-                    <label for="rental">Rental of a payment terminal</label>
-                </div>
-                </div>
-            </div>
-            <div class="col-4 col-lg-4 calculator-result">
-                <article class="products">
-                    <p class="option-name">Products</p>
-                    <div class="products-calc">
-                        <p class="products-quantity"></p>
-                        <p class="product-times"></p>
-                        <p class="product-converter"></p>
+            <div class="row">
+                <div class="col-10 col-lg-5 inputs-group" >
+                    <input type="number" class="products-quantity-input" placeholder="Products quantity">
+                    <input type="number" class="estimated-orders-month-input" placeholder="Estimated orders in month">
+                    <select class="bundle-option">
+                        <option value="basic" >Basic</option>
+                        <option value="professional">Professional</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                    <div class="inputs-container">
+                        <input type="checkbox" id="accounting" class="checkbox-input">
+                        <label for="accounting">Accounting</label>
+                    <div class="inputs-container">
+                        <input type="checkbox" id="rental" class="checkbox-input">
+                        <label for="rental">Rental of a payment terminal</label>
                     </div>
-                    <p class="products-sum"></p>
-                </article>
-
-                <article class="orders">
-                    <p class="option-name">Orders</p>
-                    <div class="products-calc">
-                        <p class="orders-quantity"></p>
-                        <p class="orders-times"></p>
-                        <p class="orders-converter"></p>
                     </div>
-                    <p class="orders-sum"></p>
-                </article>
+                </div>
+                <div class="col-10 col-lg-5 calculator-result">
+                    <article class="products">
+                        <p class="option-name">Products</p>
+                        <div class="products-calc">
+                            <p class="products-quantity"></p>
+                            <p class="product-times"></p>
+                            <p class="product-converter"></p>
+                        </div>
+                        <p class="products-sum"></p>
+                    </article>
 
-                <article class="package">
-                    <p class="option-name">Package</p>
-                    <p class="bundle-name" style="color: white"></p>
-                    <p class="bundle-sum"></p>
-                </article>
+                    <article class="orders">
+                        <p class="option-name">Orders</p>
+                        <div class="products-calc">
+                            <p class="orders-quantity"></p>
+                            <p class="orders-times"></p>
+                            <p class="orders-converter"></p>
+                        </div>
+                        <p class="orders-sum"></p>
+                    </article>
 
-                <article class="accounting">
-                    <p class="option-name">Accounting</p>
-                    <p class="accounting-sum"></p>
-                </article>
+                    <article class="package">
+                        <p class="option-name">Package</p>
+                        <p class="bundle-name" style="color: white"></p>
+                        <p class="bundle-sum"></p>
+                    </article>
 
-                <article class="terminal">
-                    <p class="option-name">Terminal</p>
-                    <p class="terminal-sum"></p>
-                </article>
+                    <article class="accounting">
+                        <p class="option-name">Accounting</p>
+                        <p class="accounting-sum"></p>
+                    </article>
 
-                <article class="total-value">
-                    <p class="option-name">Total</p>
-                    <p class="total"></p>
-                </article>
+                    <article class="terminal">
+                        <p class="option-name">Terminal</p>
+                        <p class="terminal-sum"></p>
+                    </article>
 
+                    <article class="total-value">
+                        <p class="option-name">Total</p>
+                        <p class="total"></p>
+                    </article>
+                </div>
             </div>
         </div>
     </main>
