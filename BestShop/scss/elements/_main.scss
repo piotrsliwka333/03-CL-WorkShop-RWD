@@ -593,6 +593,7 @@
           font-weight: 400;
           color: nth($colors, 1);
           display: none;
+          font-size: 20px;
         }
 
         .checkbox:checked ~ .checkmark:after {
