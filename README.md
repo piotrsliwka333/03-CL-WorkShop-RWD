@@ -5,7 +5,7 @@ BestShop is landing page of online store with pricing calculator.
 ## Description
 The whole project of BestShop was prepared in AdobeXD.
 
-## DEMO
+### Check Best Shop Live!: https://piotrsliwka333.github.io/03-CL-WorkShop-RWD/
 
  ![jumbotron](BestShop/assets/BestShopJumbotron.png)
  
